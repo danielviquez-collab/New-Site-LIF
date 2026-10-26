@@ -47,3 +47,8 @@ R2 corrige el cierre automático: no enfoca el logo del encabezado y retira el f
 La distribución WIP preparada pasa compilación, TypeScript y 113 referencias de recursos sin faltantes en 12 páginas HTML. La referencia completa de Sites se verifica por separado: 11 páginas HTML, 128 referencias y 136 recursos públicos idénticos a fuente. No deben mezclarse los conteos de ambas variantes.
 
 La revisión HTTP del sitio Sites publicado confirmó los recursos gráficos y el audio, así como el código servido de la posición móvil, el desvanecimiento y la corrección de foco. No se enviaron formularios ni registros de participantes. La revisión visual automatizada final de los fondos sigue pendiente; las vistas del arte no equivalen a capturas del sitio. Detalle en [PUBLICACION.md](PUBLICACION.md).
+
+## Verde del banner — 26 de octubre de 2026
+
+Cambio aprobado: solo el fondo de `.campaign-hero` en `app/home.css`, de `#007C38` a `#00A73C`, tomado de la hoja Puro sabor en el vector lateral. Los sellos, ilustraciones, productos, tipografias y transiciones se conservan. La distribucion compilada se regenera por separado para esta variante. Comparacion en navegador con el mismo sabor y encuadre a 1280 px; movil a 390 px sin desborde. El nuevo fondo reduce el contraste del amarillo. La actualizacion de GitHub no equivale a confirmar un despliegue nuevo de los sitios.
+

@@ -47,3 +47,8 @@ TypeScript y compilación correctos. La distribución WIP preparada contiene 12 
 La bienvenida y los stickers respetan movimiento reducido. La comprobación visual automatizada final de los fondos sigue pendiente porque el control local del navegador está desactivado. Las vistas aisladas de los SVG sirven para revisar el arte y no sustituyen capturas del sitio. Safari en un iPhone físico y las pruebas de carga permanecen pendientes.
 
 El historial de entregas anteriores se conserva en Git.
+
+## Verde del banner — 26 de octubre de 2026
+
+El fondo del hero utiliza `#00A73C`, el verde de la hoja Puro sabor del lateral, en lugar de `#007C38`. Esta entrega actualiza la fuente y su distribucion compilada. Conserva el contenido de esta variante y el resto del diseño. La comparacion local se reviso en escritorio y movil; el amarillo tiene menor contraste sobre el nuevo fondo. Este cambio de color se autoriza para GitHub; no confirma una nueva publicacion en Sites.
+

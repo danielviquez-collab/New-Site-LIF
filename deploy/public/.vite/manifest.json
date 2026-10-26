@@ -1,6 +1,6 @@
 {
   "../../node_modules/vinext/dist/shims/internal/app-route-prefetch-policy.js": {
-    "file": "_next/static/chunks/app-route-prefetch-policy-H8mZ8i-b.js",
+    "file": "_next/static/chunks/app-route-prefetch-policy-ChV_6-AS.js",
     "name": "app-route-prefetch-policy",
     "src": "../../node_modules/vinext/dist/shims/internal/app-route-prefetch-policy.js",
     "isDynamicEntry": true,
@@ -9,7 +9,7 @@
     ]
   },
   "../../node_modules/vinext/dist/shims/layout-segment-context.js": {
-    "file": "_next/static/chunks/layout-segment-context-Pibx1oDO.js",
+    "file": "_next/static/chunks/layout-segment-context-COnsx5lO.js",
     "name": "layout-segment-context",
     "src": "../../node_modules/vinext/dist/shims/layout-segment-context.js",
     "isDynamicEntry": true,
@@ -99,11 +99,11 @@
       "_framework-D_rUT4EX.js"
     ]
   },
-  "_flavor-pack-BM7QCu-5.js": {
-    "file": "_next/static/chunks/flavor-pack-BM7QCu-5.js",
+  "_flavor-pack-BTpOtxKS.js": {
+    "file": "_next/static/chunks/flavor-pack-BTpOtxKS.js",
     "name": "flavor-pack",
     "imports": [
-      "_image-BiJv2j84.js",
+      "_image-BT2Sr75e.js",
       "_framework-D_rUT4EX.js"
     ]
   },
@@ -155,8 +155,8 @@
       "_static-link-6fm3gCbA.js"
     ]
   },
-  "_image-BiJv2j84.js": {
-    "file": "_next/static/chunks/image-BiJv2j84.js",
+  "_image-BT2Sr75e.js": {
+    "file": "_next/static/chunks/image-BT2Sr75e.js",
     "name": "image",
     "imports": [
       "_rolldown-runtime-C60lm6uB.js",
@@ -289,13 +289,13 @@
     ]
   },
   "components/confessions-content.tsx": {
-    "file": "_next/static/chunks/confessions-content-QQi2QCNM.js",
+    "file": "_next/static/chunks/confessions-content-DwkYgbxz.js",
     "name": "confessions-content",
     "src": "components/confessions-content.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_rolldown-runtime-C60lm6uB.js",
-      "_image-BiJv2j84.js",
+      "_image-BT2Sr75e.js",
       "components/confession-community.tsx",
       "_message-circle-k0cWvWPp.js",
       "_send-u-Ccm_sc.js",
@@ -310,14 +310,14 @@
     ]
   },
   "components/contact-modal.tsx": {
-    "file": "_next/static/chunks/contact-modal-nf-qcbfG.js",
+    "file": "_next/static/chunks/contact-modal-C6GHQH8f.js",
     "name": "contact-modal",
     "src": "components/contact-modal.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_rolldown-runtime-C60lm6uB.js",
       "_useScrollLock-DRlgq-FN.js",
-      "_image-BiJv2j84.js",
+      "_image-BT2Sr75e.js",
       "_createLucideIcon-oTko8QZf.js",
       "components/site-chrome.tsx",
       "_check-ZFzU1zwm.js",
@@ -331,7 +331,7 @@
     ]
   },
   "components/cookie-consent.tsx": {
-    "file": "_next/static/chunks/cookie-consent-V3pwQHQW.js",
+    "file": "_next/static/chunks/cookie-consent-zcSj_PGe.js",
     "name": "cookie-consent",
     "src": "components/cookie-consent.tsx",
     "isDynamicEntry": true,
@@ -346,7 +346,7 @@
     ]
   },
   "components/flavor-catalog.tsx": {
-    "file": "_next/static/chunks/flavor-catalog-C-dcBdgZ.js",
+    "file": "_next/static/chunks/flavor-catalog-DQjdcgbG.js",
     "name": "flavor-catalog",
     "src": "components/flavor-catalog.tsx",
     "isDynamicEntry": true,
@@ -356,7 +356,7 @@
       "_document-whatsapp-link-BaKbjxKu.js",
       "_x-DiaeOBRs.js",
       "_framework-D_rUT4EX.js",
-      "_flavor-pack-BM7QCu-5.js",
+      "_flavor-pack-BTpOtxKS.js",
       "_analytics-ByIQ3Mef.js",
       "_lif-content-Bc9tJOl4.js",
       "_sachet-motion-D0DzseWZ.js"
@@ -366,14 +366,14 @@
     ]
   },
   "components/games.tsx": {
-    "file": "_next/static/chunks/games-DHKo5ic6.js",
+    "file": "_next/static/chunks/games-DCqX1T-J.js",
     "name": "games",
     "src": "components/games.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_rolldown-runtime-C60lm6uB.js",
       "virtual:vinext-app-browser-entry",
-      "_image-BiJv2j84.js",
+      "_image-BT2Sr75e.js",
       "_embla-carousel-react.esm-DYuRcuxV.js",
       "_createLucideIcon-oTko8QZf.js",
       "_arrow-down-Bb-bblLB.js",
@@ -418,36 +418,36 @@
     ]
   },
   "components/home-content.tsx": {
-    "file": "_next/static/chunks/home-content-DxrNz8M2.js",
+    "file": "_next/static/chunks/home-content-DmIdD7MX.js",
     "name": "home-content",
     "src": "components/home-content.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_rolldown-runtime-C60lm6uB.js",
-      "_image-BiJv2j84.js",
+      "_image-BT2Sr75e.js",
       "_embla-carousel-react.esm-DYuRcuxV.js",
       "_createLucideIcon-oTko8QZf.js",
       "_arrow-right-BkDuRb0n.js",
       "components/site-chrome.tsx",
       "_framework-D_rUT4EX.js",
-      "_flavor-pack-BM7QCu-5.js",
+      "_flavor-pack-BTpOtxKS.js",
       "_home-entrance-BE39_mjJ.js",
       "_static-link-6fm3gCbA.js",
       "_analytics-ByIQ3Mef.js",
       "_lif-content-Bc9tJOl4.js"
     ],
     "css": [
-      "_next/static/css/home-content.vLexnq4j.css"
+      "_next/static/css/home-content.BL0vBdFB.css"
     ]
   },
   "components/recipes-browser.tsx": {
-    "file": "_next/static/chunks/recipes-browser-CBJk_5Uq.js",
+    "file": "_next/static/chunks/recipes-browser-BK7q03_n.js",
     "name": "recipes-browser",
     "src": "components/recipes-browser.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_rolldown-runtime-C60lm6uB.js",
-      "_image-BiJv2j84.js",
+      "_image-BT2Sr75e.js",
       "_arrow-down-Bb-bblLB.js",
       "_document-whatsapp-link-BaKbjxKu.js",
       "_x-DiaeOBRs.js",
@@ -457,14 +457,14 @@
     ]
   },
   "components/site-chrome.tsx": {
-    "file": "_next/static/chunks/site-chrome-DORai-Qw.js",
+    "file": "_next/static/chunks/site-chrome-mPBn07mZ.js",
     "name": "site-chrome",
     "src": "components/site-chrome.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_rolldown-runtime-C60lm6uB.js",
       "virtual:vinext-app-browser-entry",
-      "_image-BiJv2j84.js",
+      "_image-BT2Sr75e.js",
       "_createLucideIcon-oTko8QZf.js",
       "_arrow-right-BkDuRb0n.js",
       "_map-pin-QLoqvfKI.js",
@@ -505,7 +505,7 @@
     ]
   },
   "virtual:vinext-app-browser-entry": {
-    "file": "_next/static/chunks/index-pGhkCImm.js",
+    "file": "_next/static/chunks/index-D6tgkkV3.js",
     "name": "index",
     "src": "virtual:vinext-app-browser-entry",
     "isEntry": true,
@@ -525,7 +525,7 @@
       "components/cookie-consent.tsx",
       "components/games.tsx",
       "components/confession-community.tsx",
-      "_image-BiJv2j84.js",
+      "_image-BT2Sr75e.js",
       "../../node_modules/vinext/dist/shims/layout-segment-context.js",
       "components/home-content.tsx",
       "components/video-interstitial.tsx",

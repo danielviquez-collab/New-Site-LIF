@@ -1,5 +1,5 @@
 .campaign-home { background: #fff; }
-.campaign-hero { position: relative; isolation: isolate; padding: 30px 24px 22px; background: #007c38; color: var(--paper); text-align: center; overflow: hidden; }
+.campaign-hero { position: relative; isolation: isolate; padding: 30px 24px 22px; background: #00a73c; color: var(--paper); text-align: center; overflow: hidden; }
 .campaign-hero::before, .campaign-hero::after { position: absolute; z-index: -1; top: 0; height: 100%; width: auto; aspect-ratio: 192 / 806; background: center / 100% 100% no-repeat; content: ''; pointer-events: none; }
 .campaign-hero::before { left: 0; background-image: url('/brand/hero-side-left.svg'); }
 .campaign-hero::after { right: 0; background-image: url('/brand/hero-side-right.svg'); }
