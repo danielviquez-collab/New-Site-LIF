@@ -1,7 +1,7 @@
 'use client';
 
 import { ArrowRight, ArrowUpRight, Gamepad2 } from 'lucide-react';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import Link from './static-link';
 import { SiteShell } from '@/components/site-chrome';
@@ -11,6 +11,58 @@ import { recipes } from '@/lib/lif-content';
 import '@/app/home.css';
 
 const picks = [recipes[0], recipes[2]];
+
+const heroStickers = [
+  { src: '/brand/insumos/badge-puro-sabor-verde.svg', width: 256, height: 202 },
+  { src: '/brand/bajo-en-calorias.svg', width: 190, height: 100 },
+  { src: '/brand/insumos/badge-con-stevia-verde.svg', width: 209, height: 166 },
+];
+
+function CampaignStickers() {
+  const [activeSticker, setActiveSticker] = useState(0);
+  const [stickerVisible, setStickerVisible] = useState(true);
+
+  useEffect(() => {
+    const mobile = window.matchMedia('(max-width: 700px)');
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    heroStickers.forEach(({ src }) => { const image = new window.Image(); image.src = src; });
+    let timer: number | undefined;
+    const nextSticker = () => {
+      setStickerVisible(false);
+      timer = window.setTimeout(() => {
+        setActiveSticker((current) => (current + 1) % heroStickers.length);
+        timer = window.setTimeout(() => {
+          setStickerVisible(true);
+          timer = window.setTimeout(nextSticker, 5500);
+        }, 80);
+      }, 450);
+    };
+    const updateRotation = () => {
+      window.clearTimeout(timer);
+      setStickerVisible(true);
+      if (!mobile.matches || reducedMotion.matches || document.hidden) return;
+      timer = window.setTimeout(nextSticker, 5500);
+    };
+    updateRotation();
+    mobile.addEventListener('change', updateRotation);
+    reducedMotion.addEventListener('change', updateRotation);
+    document.addEventListener('visibilitychange', updateRotation);
+    return () => {
+      window.clearTimeout(timer);
+      mobile.removeEventListener('change', updateRotation);
+      reducedMotion.removeEventListener('change', updateRotation);
+      document.removeEventListener('visibilitychange', updateRotation);
+    };
+  }, []);
+
+  const sticker = heroStickers[activeSticker];
+  return (
+    <div className="campaign-artwork" aria-hidden="true">
+      <Image className={`campaign-decoration campaign-mobile-sticker${stickerVisible ? '' : ' is-changing'}`} src={sticker.src} alt="" width={sticker.width} height={sticker.height} />
+      <Image className="campaign-decoration campaign-calories" src="/brand/bajo-en-calorias.svg" alt="" width={190} height={100} />
+    </div>
+  );
+}
 
 export function HomeContent() {
   const homeRef = useRef<HTMLElement>(null);
@@ -40,10 +92,7 @@ export function HomeContent() {
             <h1 id="home-title">Cambiá el sabor <span>de tu día.</span></h1>
           </div>
           <div className="campaign-products">
-            <div className="campaign-artwork" aria-hidden="true">
-              <Image className="campaign-decoration campaign-stevia" src="/brand/con-stevia.svg" alt="" width={140} height={140} />
-              <Image className="campaign-decoration campaign-calories" src="/brand/bajo-en-calorias.svg" alt="" width={190} height={100} />
-            </div>
+            <CampaignStickers />
             <FlavorShowcase />
           </div>
           <Link href="/sabores/" className="showcase-catalog">Todos los sabores <ArrowUpRight aria-hidden="true" /></Link>

@@ -1,5 +1,6 @@
 .home-entrance { position: relative; }
 .lif-motion-logo { display: block; width: 100%; height: 100%; overflow: visible; }
+.lif-approved-intro { display: block; width: 100%; height: 100%; overflow: visible; }
 /* Animate wrappers only: the original Illustrator path matrices stay untouched. */
 .lif-motion-logo > g { transform-box: fill-box; transform-origin: center; }
 .is-playing .logo-leaf { animation: leaf-arrive 480ms cubic-bezier(.18,.8,.25,1) both; }
@@ -21,11 +22,16 @@
   100% { opacity: 1; transform: none; }
 }
 @keyframes logo-signature { from { opacity: 0; } to { opacity: 1; } }
-.logo-entry-overlay { position: fixed; z-index: 100; inset: 0; display: grid; place-items: center; background: #fff; animation: logo-overlay-away 480ms 1400ms ease both; }
-.logo-entry-traveler { width: min(440px, 82vw); aspect-ratio: 956 / 600; animation: logo-travel 520ms 1350ms cubic-bezier(.66,0,.2,1) both; }
+.logo-entry-overlay { position: fixed; z-index: 100; inset: 0; display: grid; place-items: center; background: #fff; }
+.logo-entry-overlay:focus { outline: none; }
+.logo-entry-traveler { width: min(440px, 82vw); aspect-ratio: 956 / 600; }
+.is-departing.logo-entry-overlay { animation: logo-overlay-away 480ms ease both; }
+.is-departing .logo-entry-traveler { animation: logo-travel var(--logo-travel-duration, 520ms) cubic-bezier(.66,0,.2,1) both; }
 .is-waiting.logo-entry-overlay, .is-waiting .logo-entry-traveler { animation: none; }
-.is-waiting .lif-motion-logo { visibility: hidden; }
-.home-entrance.is-entering .entrance-home { animation: home-enter 520ms 1350ms ease both; }
+.is-waiting .lif-motion-logo, .is-waiting .lif-approved-intro { visibility: hidden; }
+.home-entrance.is-entering .entrance-home { opacity: 0; }
+html[data-home-entry='content'] .home-entrance[data-intro-state='pending'] .entrance-home { opacity: 1; }
+.home-entrance[data-intro-state='departing'] .entrance-home { animation: home-enter 520ms ease both; }
 .home-entrance.is-entering .showcase-pack .pack-image { animation-play-state: paused; }
 @keyframes logo-overlay-away { from { background: #fff; opacity: 1; } 70% { background: transparent; opacity: 1; } to { background: transparent; opacity: 0; } }
 @keyframes logo-travel { from { transform: none; } to { transform: translate(var(--logo-travel-x, 0px), var(--logo-travel-y, -35vh)) scale(var(--logo-travel-scale, .22)) rotate(-5deg); } }

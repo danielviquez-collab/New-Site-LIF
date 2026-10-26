@@ -33,7 +33,7 @@
 .brand-social-links img { display: block; width: 21px; height: 21px; filter: brightness(0) invert(1); }
 .brand-social-links a:hover { background: var(--purple); }
 .site-footer { background: #fff; color: var(--green); padding: 0; border: 0; }
-.site-footer::before { display: block; height: 100px; background: url('/brand/frutas-desktop.webp') center 60% / 1280px auto; content: ''; }
+.site-footer::before { display: block; height: 100px; background: #8b003d url('/brand/brand-fruit-strip.svg') center / auto 100% repeat-x; content: ''; }
 .footer-layout { width: min(100% - 64px, 1280px); margin: auto; padding: 44px 0; grid-template-columns: 1.1fr 1fr .75fr; min-height: 200px; gap: 44px; }
 .footer-contact { grid-column: 1; grid-row: 1; }
 .footer-contact-item { color: var(--ink); }
@@ -74,7 +74,7 @@
   .menu-nav-arrow { display: block; position: absolute; right: 12px; top: 50%; transform: translateY(-50%); width: 22px; height: 22px; color: var(--green); pointer-events: none; }
   .primary-nav .nav-game-link { padding-block: 28px; }
   .site-footer { padding: 0; }
-  .site-footer::before { height: 80px; background-image: url('/brand/frutas-mobile.webp'); background-size: 100% auto; }
+  .site-footer::before { height: 80px; }
   .footer-layout { width: calc(100% - 48px); padding: 36px 0; grid-template-columns: 1fr; gap: 27px; }
   .footer-copyright { padding: 20px 24px; font-size: 13px; }
   .footer-contact { grid-column: 1; grid-row: 1; }

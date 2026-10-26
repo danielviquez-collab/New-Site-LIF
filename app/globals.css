@@ -201,7 +201,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 .page-hero-recipes { background: var(--yellow); }
 .recipe-page { background: #fff; }
 .recipe-page .page-hero-recipes { width: 100%; margin: 0; min-height: 300px; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 14px; padding: 42px max(32px, calc((100% - 1360px) / 2)); }
-.recipe-page .page-hero-recipes::after { inset: 0 0 0 auto; width: 30%; height: auto; border: 0; border-radius: 0; background: url('/brand/frutas-desktop.webp') center / auto 100%; clip-path: polygon(18% 0, 100% 0, 100% 100%, 0 100%); }
+.recipe-page .page-hero-recipes::after { inset: 0 0 0 auto; width: 30%; height: auto; border: 0; border-radius: 0; background: #8b003d url('/brand/brand-fruit-panel.svg') center / cover no-repeat; clip-path: polygon(18% 0, 100% 0, 100% 100%, 0 100%); }
 .recipe-page .page-hero-recipes h1 { font-size: 52px; margin: 0; }
 .recipe-page .page-hero-recipes .eyebrow { margin: 0; }
 .recipe-page .page-hero-recipes > p { max-width: 60%; }
@@ -479,10 +479,10 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
   .recipe-filters label { min-width: 0; }
   .result-count { margin-left: 0; padding: 0; }
   .recipe-grid { grid-template-columns: 1fr; gap: 8px; }
-  .recipe-page .page-hero-recipes { padding: 36px 20px 48px; min-height: 0; }
+  .recipe-page .page-hero-recipes { padding: 36px 20px 72px; min-height: 0; }
   .recipe-page .page-hero-recipes h1 { font-size: 38px; }
   .recipe-page .page-hero-recipes > p { max-width: 100%; }
-  .recipe-page .page-hero-recipes::after { inset: auto 0 0; height: 18px; width: 100%; clip-path: none; background-size: 100% auto; background-image: url('/brand/frutas-mobile.webp'); }
+  .recipe-page .page-hero-recipes::after { inset: auto 0 0; height: 48px; width: 100%; clip-path: none; background: #8b003d url('/brand/brand-fruit-strip.svg') center / auto 100% repeat-x; }
   .recipe-image-wrap { aspect-ratio: 4 / 3; }
   .recipe-tile-copy strong { font-size: 23px; }
   .detail-dialog { padding: 28px 20px; }

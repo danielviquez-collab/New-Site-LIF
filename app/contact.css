@@ -34,7 +34,7 @@
   padding: 26px;
   border: 3px solid var(--ink);
   border-radius: 8px;
-  background: #ffdf24 url('/brand/contact-fruits-wide.webp') center/cover;
+  background: #8b003d url('/brand/brand-fruit-pattern.svg') center / 720px 560px repeat;
   box-shadow: 0 15px 70px #10381f55;
   color: var(--ink);
   overflow-y: auto;
@@ -352,7 +352,7 @@
 @media (max-width: 600px) {
   .lif-contact-dialog {
     padding: 16px;
-    background-image: url('/brand/contact-fruits-square.webp');
+    background-size: 540px 420px;
   }
   .lif-contact-content {
     padding: 20px 15px;

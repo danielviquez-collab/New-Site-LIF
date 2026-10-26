@@ -1,58 +1,49 @@
-# NUEVO Sitio LIF - WorkInProgress
+# Sitio LIF — WorkInProgress
 
-**Desarrollo: Daniel Víquez Azofeifa para LAICA 2026.**
+Desarrollo: Daniel Víquez Azofeifa para LAICA 2026.
 
-## Esta version
+Esta variante mantiene Renzo, comunidad y las historias de Confesiones en construcción. El hero y el formulario de esa sección permanecen disponibles. Los medios del contenido bloqueado se excluyen de la distribución.
 
-Fuente y distribucion del 13 de octubre de 2026. Referencia publicada: https://lifnewsitev1.netlify.app
+## Actualización aprobada: 22 de octubre de 2026
 
-- Renzo, comunidad, ver todas e historias mantienen el aviso de construccion. Hero y formulario siguen activos. Los videos ocultos no se distribuyen.
-- Trece reversos render, ficha nutricional negra, frentes/PDF/valores y tiempos aprobados conservados.
-- Memoria, Snake, ranking comun Top 20, tres intentos diarios y registros independientes.
-- Sin paginas experimentales, intentos ilimitados ni datos personales de participantes.
-- No incluye contrasenas, llaveros, cookies, base de datos, tokens ni dependencias instaladas.
+La revisión R2 incorpora los cambios visuales aprobados:
 
-## Estructura y documentacion
+- Laterales vectoriales del hero y la misma familia gráfica en la franja del footer, el recetario y contacto.
+- Sellos nuevos de Puro sabor y Con stevia; Bajo en calorías conserva su arte original.
+- En móvil, un solo sticker arriba a la izquierda. Alterna con un desvanecimiento de 450 ms y deja espacio para los sobres y la etiqueta Nuevo sabor. La rotación se detiene con movimiento reducido o la pestaña oculta.
+- En escritorio, los sellos incluidos en los laterales aparecen una sola vez. Bajo en calorías queda sobre el área verde para despejar el vaso.
+- Bienvenida Actual → Hielo fluido → Ajustado, con el audio original y la firma LAICA completa antes del traslado.
+- La entrada automática termina sin enfocar el logo del encabezado. Entrar, Escape, repetición manual o uso de los controles restauran el foco al contexto apropiado. Los anillos de foco del teclado se conservan.
 
-- `app/`, `components/`, `hooks/`, `lib/`: codigo fuente de la experiencia.
-- `public/`: productos, audio, video, fuentes y PDF.
-- `netlify/functions/`, `integrations/`: backend y reportes; secretos configurados por entorno.
-- `deploy/public/` y `deploy/functions/`: distribucion compilada conservada de la entrega aprobada.
-- `docs/ARQUITECTURA.md`: guia detallada de paginas, componentes, datos, reglas, animacion y mantenimiento.
-- `docs/PUBLICACION.md`: despliegues y verificaciones confirmados.
+## Revisar el sitio
 
-## Desarrollo
+Vista pública de esta variante: [LIF en Netlify](https://lifnewsitev1.netlify.app/).
 
-Node.js >=22.13. Instalar dependencias con `npm ci`; iniciar con `npm run dev`.
-La configuracion publica de compilacion esta en `.env.example`. Los valores privados se definen en el entorno local o de alojamiento; nunca se suben al repositorio.
-Sin credenciales propias del servidor, los juegos/contacto no pueden guardar datos.
-El formulario de Confesiones conserva su endpoint publico de Apps Script; no realizar envios de QA a ese servicio.
+Referencia con el contenido completo: [LIF en Sites](https://lifnewsitev1.danielviquez19.chatgpt.site/).
 
-## Instalacion en Netlify
+La actualización R2 de Sites está publicada. La nueva actualización de Netlify debe comprobarse después de incorporar esta entrega. El estado y las comprobaciones se describen en [PUBLICACION.md](docs/PUBLICACION.md).
 
-`netlify.toml` en la raiz instala la distribucion compilada de `deploy/`, sin recompilar.
-Configurar los valores privados existentes en Production/Functions. Git no contiene una copia de Supabase ni sustituye sus backups.
-Para una instalacion manual, usar Netlify CLI desde `deploy/`: `netlify deploy --dir=public --functions=functions --no-build`. Solo agregar `--prod` con autorizacion para publicar.
-No arrastrar solamente public/: eso omite las funciones de API, ranking inicial y sincronizacion de Sheets.
+## Desarrollo local
 
-## Actualizaciones
+Requiere Node.js 22.13 o posterior.
 
-Cada cambio debe actualizar este README y `docs/ARQUITECTURA.md`, pasar las verificaciones y regenerar la distribucion antes de publicarse.
-El codigo no modifica los registros existentes ni ejecuta migraciones por compilar.
-`npm run build` produce `dist/client/` y `dist/netlify-functions/` con esta variante
-en construccion, tomando la configuracion publica de `.env.example`.
-La compilacion de este repositorio es portable y no requiere una sesion de Sites.
-La guia tecnica identifica diferencias entre local, Netlify y Sites. Esta copia reproduce solo la variante indicada arriba.
-La distribucion `deploy/` es una captura aprobada, no se actualiza por editar archivos fuente.
-No publicar pruebas ni modificar fuentes, colores, recursos o tiempos sin aprobacion.
+```sh
+npm ci
+npm run dev
+```
 
-## Limites verificados
+Abrir la dirección que indique la terminal. Para generar la distribución de esta variante:
 
-Los enlaces publicados pasaron paginas, ranking inicial, recursos, cinco pantallas y 35 escenarios de sobres por plataforma sin envios reales.
-Esta copia fuente pasa compilacion, TypeScript, 20 pruebas focalizadas,
-112 referencias sin faltantes y cinco pantallas con API simulada.
-Los archivos compilados en `deploy/` permanecen identicos a la entrega publicada.
-Safari/iPhone fisico y pruebas de carga permanecen pendientes. Sheets es un reporte asincrono, no un backup completo.
-Repositorio publico: https://github.com/danielviquez-collab/NUEVO-Sitio-LIF-Version-WorkInProgress
-Conserva el ID del anterior New-Site-LIF. Propietario: danielviquez-collab.
-Guardar fuente en GitHub no vuelve a publicar Netlify ni cambia Supabase.
+```sh
+npm run build
+```
+
+La estructura y los componentes visuales se describen en [ARQUITECTURA.md](docs/ARQUITECTURA.md). Los cambios deben actualizar estos documentos y regenerar la distribución antes de revisarse en el sitio publicado.
+
+## Comprobaciones y límites
+
+TypeScript y compilación correctos. La distribución WIP preparada contiene 12 páginas HTML, con 113 referencias de recursos comprobadas sin faltantes. Las consultas de revisión fueron de lectura; no se enviaron formularios ni registros de participantes.
+
+La bienvenida y los stickers respetan movimiento reducido. La comprobación visual automatizada final de los fondos sigue pendiente porque el control local del navegador está desactivado. Las vistas aisladas de los SVG sirven para revisar el arte y no sustituyen capturas del sitio. Safari en un iPhone físico y las pruebas de carga permanecen pendientes.
+
+El historial de entregas anteriores se conserva en Git.

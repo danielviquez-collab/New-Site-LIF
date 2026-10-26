@@ -1,6 +1,6 @@
 {
   "../../node_modules/vinext/dist/shims/internal/app-route-prefetch-policy.js": {
-    "file": "_next/static/chunks/app-route-prefetch-policy-C88aDH6G.js",
+    "file": "_next/static/chunks/app-route-prefetch-policy-H8mZ8i-b.js",
     "name": "app-route-prefetch-policy",
     "src": "../../node_modules/vinext/dist/shims/internal/app-route-prefetch-policy.js",
     "isDynamicEntry": true,
@@ -9,7 +9,7 @@
     ]
   },
   "../../node_modules/vinext/dist/shims/layout-segment-context.js": {
-    "file": "_next/static/chunks/layout-segment-context-B8G3By_C.js",
+    "file": "_next/static/chunks/layout-segment-context-Pibx1oDO.js",
     "name": "layout-segment-context",
     "src": "../../node_modules/vinext/dist/shims/layout-segment-context.js",
     "isDynamicEntry": true,
@@ -99,11 +99,11 @@
       "_framework-D_rUT4EX.js"
     ]
   },
-  "_flavor-pack-DZbJqhzR.js": {
-    "file": "_next/static/chunks/flavor-pack-DZbJqhzR.js",
+  "_flavor-pack-BM7QCu-5.js": {
+    "file": "_next/static/chunks/flavor-pack-BM7QCu-5.js",
     "name": "flavor-pack",
     "imports": [
-      "_image-XbTmjEHJ.js",
+      "_image-BiJv2j84.js",
       "_framework-D_rUT4EX.js"
     ]
   },
@@ -143,8 +143,8 @@
     "file": "_next/static/chunks/game-session-NKmoouIc.js",
     "name": "game-session"
   },
-  "_home-entrance-CfXDiBgN.js": {
-    "file": "_next/static/chunks/home-entrance-CfXDiBgN.js",
+  "_home-entrance-BE39_mjJ.js": {
+    "file": "_next/static/chunks/home-entrance-BE39_mjJ.js",
     "name": "home-entrance",
     "imports": [
       "_rolldown-runtime-C60lm6uB.js",
@@ -155,8 +155,8 @@
       "_static-link-6fm3gCbA.js"
     ]
   },
-  "_image-XbTmjEHJ.js": {
-    "file": "_next/static/chunks/image-XbTmjEHJ.js",
+  "_image-BiJv2j84.js": {
+    "file": "_next/static/chunks/image-BiJv2j84.js",
     "name": "image",
     "imports": [
       "_rolldown-runtime-C60lm6uB.js",
@@ -289,13 +289,13 @@
     ]
   },
   "components/confessions-content.tsx": {
-    "file": "_next/static/chunks/confessions-content-CWUXM0kj.js",
+    "file": "_next/static/chunks/confessions-content-QQi2QCNM.js",
     "name": "confessions-content",
     "src": "components/confessions-content.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_rolldown-runtime-C60lm6uB.js",
-      "_image-XbTmjEHJ.js",
+      "_image-BiJv2j84.js",
       "components/confession-community.tsx",
       "_message-circle-k0cWvWPp.js",
       "_send-u-Ccm_sc.js",
@@ -310,14 +310,14 @@
     ]
   },
   "components/contact-modal.tsx": {
-    "file": "_next/static/chunks/contact-modal-B7N1fhOO.js",
+    "file": "_next/static/chunks/contact-modal-nf-qcbfG.js",
     "name": "contact-modal",
     "src": "components/contact-modal.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_rolldown-runtime-C60lm6uB.js",
       "_useScrollLock-DRlgq-FN.js",
-      "_image-XbTmjEHJ.js",
+      "_image-BiJv2j84.js",
       "_createLucideIcon-oTko8QZf.js",
       "components/site-chrome.tsx",
       "_check-ZFzU1zwm.js",
@@ -331,7 +331,7 @@
     ]
   },
   "components/cookie-consent.tsx": {
-    "file": "_next/static/chunks/cookie-consent-DzJJhfQ5.js",
+    "file": "_next/static/chunks/cookie-consent-V3pwQHQW.js",
     "name": "cookie-consent",
     "src": "components/cookie-consent.tsx",
     "isDynamicEntry": true,
@@ -346,7 +346,7 @@
     ]
   },
   "components/flavor-catalog.tsx": {
-    "file": "_next/static/chunks/flavor-catalog-DW4GYNHp.js",
+    "file": "_next/static/chunks/flavor-catalog-C-dcBdgZ.js",
     "name": "flavor-catalog",
     "src": "components/flavor-catalog.tsx",
     "isDynamicEntry": true,
@@ -356,7 +356,7 @@
       "_document-whatsapp-link-BaKbjxKu.js",
       "_x-DiaeOBRs.js",
       "_framework-D_rUT4EX.js",
-      "_flavor-pack-DZbJqhzR.js",
+      "_flavor-pack-BM7QCu-5.js",
       "_analytics-ByIQ3Mef.js",
       "_lif-content-Bc9tJOl4.js",
       "_sachet-motion-D0DzseWZ.js"
@@ -366,14 +366,14 @@
     ]
   },
   "components/games.tsx": {
-    "file": "_next/static/chunks/games-DMbmLtIy.js",
+    "file": "_next/static/chunks/games-DHKo5ic6.js",
     "name": "games",
     "src": "components/games.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_rolldown-runtime-C60lm6uB.js",
       "virtual:vinext-app-browser-entry",
-      "_image-XbTmjEHJ.js",
+      "_image-BiJv2j84.js",
       "_embla-carousel-react.esm-DYuRcuxV.js",
       "_createLucideIcon-oTko8QZf.js",
       "_arrow-down-Bb-bblLB.js",
@@ -418,36 +418,36 @@
     ]
   },
   "components/home-content.tsx": {
-    "file": "_next/static/chunks/home-content-CXW-jCwM.js",
+    "file": "_next/static/chunks/home-content-DxrNz8M2.js",
     "name": "home-content",
     "src": "components/home-content.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_rolldown-runtime-C60lm6uB.js",
-      "_image-XbTmjEHJ.js",
+      "_image-BiJv2j84.js",
       "_embla-carousel-react.esm-DYuRcuxV.js",
       "_createLucideIcon-oTko8QZf.js",
       "_arrow-right-BkDuRb0n.js",
       "components/site-chrome.tsx",
       "_framework-D_rUT4EX.js",
-      "_home-entrance-CfXDiBgN.js",
-      "_flavor-pack-DZbJqhzR.js",
+      "_flavor-pack-BM7QCu-5.js",
+      "_home-entrance-BE39_mjJ.js",
       "_static-link-6fm3gCbA.js",
       "_analytics-ByIQ3Mef.js",
       "_lif-content-Bc9tJOl4.js"
     ],
     "css": [
-      "_next/static/css/home-content.Cb0RLkBB.css"
+      "_next/static/css/home-content.vLexnq4j.css"
     ]
   },
   "components/recipes-browser.tsx": {
-    "file": "_next/static/chunks/recipes-browser-B9em0Zbs.js",
+    "file": "_next/static/chunks/recipes-browser-CBJk_5Uq.js",
     "name": "recipes-browser",
     "src": "components/recipes-browser.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_rolldown-runtime-C60lm6uB.js",
-      "_image-XbTmjEHJ.js",
+      "_image-BiJv2j84.js",
       "_arrow-down-Bb-bblLB.js",
       "_document-whatsapp-link-BaKbjxKu.js",
       "_x-DiaeOBRs.js",
@@ -457,14 +457,14 @@
     ]
   },
   "components/site-chrome.tsx": {
-    "file": "_next/static/chunks/site-chrome-DB3h7qHC.js",
+    "file": "_next/static/chunks/site-chrome-DORai-Qw.js",
     "name": "site-chrome",
     "src": "components/site-chrome.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_rolldown-runtime-C60lm6uB.js",
       "virtual:vinext-app-browser-entry",
-      "_image-XbTmjEHJ.js",
+      "_image-BiJv2j84.js",
       "_createLucideIcon-oTko8QZf.js",
       "_arrow-right-BkDuRb0n.js",
       "_map-pin-QLoqvfKI.js",
@@ -505,7 +505,7 @@
     ]
   },
   "virtual:vinext-app-browser-entry": {
-    "file": "_next/static/chunks/index-B2nocuIJ.js",
+    "file": "_next/static/chunks/index-pGhkCImm.js",
     "name": "index",
     "src": "virtual:vinext-app-browser-entry",
     "isEntry": true,
@@ -516,7 +516,7 @@
     ],
     "dynamicImports": [
       "../../node_modules/vinext/dist/shims/internal/app-route-prefetch-policy.js",
-      "_home-entrance-CfXDiBgN.js",
+      "_home-entrance-BE39_mjJ.js",
       "virtual:vinext-app-browser-entry",
       "components/confessions-content.tsx",
       "components/flavor-catalog.tsx",
@@ -525,7 +525,7 @@
       "components/cookie-consent.tsx",
       "components/games.tsx",
       "components/confession-community.tsx",
-      "_image-XbTmjEHJ.js",
+      "_image-BiJv2j84.js",
       "../../node_modules/vinext/dist/shims/layout-segment-context.js",
       "components/home-content.tsx",
       "components/video-interstitial.tsx",

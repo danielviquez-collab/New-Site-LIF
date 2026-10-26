@@ -1,8 +1,8 @@
 .campaign-home { background: #fff; }
 .campaign-hero { position: relative; isolation: isolate; padding: 30px 24px 22px; background: #007c38; color: var(--paper); text-align: center; overflow: hidden; }
-.campaign-hero::before, .campaign-hero::after { position: absolute; z-index: -1; top: 0; bottom: 0; width: 10%; background: url('/brand/frutas-desktop.webp') center / auto 100%; content: ''; pointer-events: none; }
-.campaign-hero::before { left: 0; clip-path: polygon(0 0, 42% 0, 100% 100%, 0 100%); }
-.campaign-hero::after { right: 0; clip-path: polygon(58% 0, 100% 0, 100% 100%, 0 100%); }
+.campaign-hero::before, .campaign-hero::after { position: absolute; z-index: -1; top: 0; height: 100%; width: auto; aspect-ratio: 192 / 806; background: center / 100% 100% no-repeat; content: ''; pointer-events: none; }
+.campaign-hero::before { left: 0; background-image: url('/brand/hero-side-left.svg'); }
+.campaign-hero::after { right: 0; background-image: url('/brand/hero-side-right.svg'); }
 .campaign-headline { position: relative; z-index: 2; }
 .campaign-headline h1 { margin: 0 auto; max-width: 1100px; color: var(--paper); font: 900 64px/1.05 var(--font-display); letter-spacing: 0; }
 .campaign-headline h1 span { white-space: nowrap; }
@@ -36,12 +36,11 @@
 .flavor-showcase button:focus-visible, .showcase-catalog:focus-visible { outline-color: var(--yellow); }
 .showcase-catalog { display: inline-flex; gap: 6px; align-items: center; min-height: 30px; font-size: 12px; font-weight: 500; text-decoration: underline; text-underline-offset: 4px; }
 .showcase-catalog svg { width: 16px; height: 16px; }
-.campaign-artwork { position: absolute; inset: 0; pointer-events: none; }
+.campaign-artwork { position: absolute; inset: 0 20%; pointer-events: none; }
 .campaign-decoration { position: absolute; object-fit: contain; pointer-events: none; }
-.campaign-stevia { left: 3%; top: 44px; width: 100px; height: 100px; animation: stevia-sway 8s ease-in-out infinite; }
-.campaign-calories { right: 1%; bottom: 85px; width: 140px; height: 85px; animation: calories-bob 6s -1.5s ease-in-out infinite; }
-@keyframes stevia-sway { 0%, 100% { transform: translateY(0) rotate(-10deg); } 50% { transform: translateY(-6px) rotate(5deg); } }
-@keyframes calories-bob { 0%, 100% { transform: translateY(0) rotate(5deg); } 50% { transform: translateY(-6px) rotate(-4deg); } }
+.campaign-mobile-sticker { display: none; }
+.campaign-calories { right: 0; top: 24px; width: 140px; height: auto; animation: hero-badge-bob 6s -1.5s ease-in-out infinite; }
+@keyframes hero-badge-bob { 0%, 100% { transform: translateY(0) rotate(5deg); } 50% { transform: translateY(-6px) rotate(-4deg); } }
 
 .campaign-play { position: relative; background: var(--purple); color: var(--paper); overflow: hidden; }
 .campaign-play-inner { display: flex; align-items: center; gap: 26px; width: min(100% - 80px, 1220px); min-height: 150px; margin: auto; padding: 28px 0; }
@@ -111,13 +110,12 @@
 
 @media(min-width: 1500px) and (min-height: 851px) { .campaign-headline h1 { font-size: 72px; } .showcase-track { height: 545px; } .showcase-pack { --pack-height: 355px; } }
 @media(max-width: 1100px) {
-  .campaign-headline h1 { font-size: 52px; }
+  .campaign-headline h1 { max-width: calc(100% - 160px); font-size: 52px; }
   .flavor-showcase { width: calc(100% - 130px); }
   .showcase-track { height: 435px; }
   .showcase-pack { --pack-height: 280px; }
   .showcase-name { font-size: 26px; }
-  .campaign-stevia { left: 0; width: 72px; height: 72px; }
-  .campaign-calories { right: -12px; width: 106px; height: 68px; bottom: 92px; }
+  .campaign-calories { top: 28px; width: 106px; }
   .showcase-pack { --sticker-space: 64px; }
   .showcase-pack .new-sticker { right: -20px; width: 72px; min-height: 72px; font-size: 16px; }
   .campaign-play h2 { font-size: 29px; }
@@ -135,15 +133,15 @@
 }
 @media(max-width: 700px) {
   .campaign-hero { padding: 26px 0 32px; }
-  .campaign-hero::before { top: auto; height: 16px; width: 100%; background-image: url('/brand/frutas-mobile.webp'); background-size: 100% auto; clip-path: none; }
-  .campaign-hero::after { display: none; }
+  .campaign-hero::before, .campaign-hero::after { display: none; }
   .campaign-headline { padding: 0 20px; }
   .campaign-headline h1 { max-width: 480px; font-size: 40px; }
   .campaign-headline h1 span { display: block; }
-  .campaign-products { margin-top: 0; padding-top: 34px; }
-  .campaign-artwork { z-index: 2; height: 78px; }
-  .campaign-stevia { width: 54px; height: 54px; top: 12px; left: 20px; }
-  .campaign-calories { width: 92px; height: 54px; top: 10px; right: 16px; bottom: auto; }
+  .campaign-products { margin-top: 0; padding-top: 64px; }
+  .campaign-artwork { display: block; inset: 0; z-index: 2; height: 86px; }
+  .campaign-mobile-sticker { display: block; width: 104px; height: 72px; top: 14px; left: 24px; opacity: 1; transition: opacity 450ms ease-in-out; }
+  .campaign-mobile-sticker.is-changing { opacity: 0; }
+  .campaign-calories { display: none; }
   .flavor-showcase { width: 100%; }
   .showcase-viewport { padding-top: 24px; }
   .showcase-track { height: 400px; }
@@ -179,5 +177,6 @@
   .showcase-pack-motion { will-change: auto; }
   .showcase-flavor.is-new.has-arrived .showcase-pack, .showcase-flavor.is-new.has-arrived .showcase-pack::after, .showcase-flavor.is-new.has-arrived .new-sticker, .campaign-decoration, .campaign-play-button { animation: none; }
   .campaign-recipe-image img, .showcase-pagination button span { transition: none; }
+  .campaign-mobile-sticker { transition: none; }
   .campaign-recipes.will-reveal .campaign-section-heading, .campaign-recipes.will-reveal .campaign-recipe, .campaign-confession.will-reveal .campaign-confession-inner { opacity: 1; transform: none; }
 }
